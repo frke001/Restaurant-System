@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="428.0" style="-fx-background-color: linear-gradient(to bottom, #556270, #4ECDC4);" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.unibl.etf.restaurant.controllers.WorkerInfoController">
+   <children>
+      <ListView fx:id="infoListView" layoutX="48.0" layoutY="125.0" prefHeight="112.0" prefWidth="153.0" stylesheets="@../css/style.css">
+         <effect>
+            <Reflection />
+         </effect>
+      </ListView>
+      <Label fx:id="numberLabel" layoutX="240.0" layoutY="91.0" text="Brojevi telefona:">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect></Label>
+      <ListView fx:id="numberListView" layoutX="240.0" layoutY="125.0" prefHeight="112.0" prefWidth="153.0" stylesheets="@../css/style.css">
+         <effect>
+            <Reflection />
+         </effect>
+      </ListView>
+      <Label fx:id="infoLabel" layoutX="48.0" layoutY="91.0" text="Label">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect></Label>
+      <Label layoutX="159.0" layoutY="29.0" text="Dodatne informacije:">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

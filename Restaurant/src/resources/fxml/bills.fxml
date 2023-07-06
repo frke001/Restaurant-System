@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="430.0" prefWidth="535.0" style="-fx-background-color: linear-gradient(to bottom, #556270, #4ECDC4);" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.unibl.etf.restaurant.controllers.BillsController">
+   <children>
+      <Label layoutX="244.0" layoutY="21.0" text="Računi:">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Label>
+      <TableView fx:id="billsTable" layoutX="38.0" layoutY="50.0" prefHeight="354.0" prefWidth="461.0" stylesheets="@../css/style.css" tableMenuButtonVisible="true">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="93.0" style="-fx-alignment: center" text="ID" />
+          <TableColumn fx:id="dateTimeColumn" prefWidth="177.0" style="-fx-alignment: center" text="Vrijeme" />
+            <TableColumn fx:id="cashColumn" prefWidth="173.0" style="-fx-alignment: center" text="Način plaćanja" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="469.0" prefWidth="638.0" style="-fx-background-color: linear-gradient(to bottom, #556270, #4ECDC4);" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.unibl.etf.restaurant.controllers.AddWorkerController">
+   <children>
+      <Label layoutX="273.0" layoutY="26.0" text="Unesite podatke:">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Label>
+      <Label layoutX="57.0" layoutY="55.0" text="Tip:">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Label>
+      <CheckBox fx:id="cookTypeCheckBox" layoutX="130.0" layoutY="54.0" mnemonicParsing="false" onAction="#onCookTypeCheckBox" prefHeight="17.0" prefWidth="90.0" stylesheets="@../css/style.css" text="Kuvar">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </CheckBox>
+      <CheckBox fx:id="bartenderTypeCheckBox" layoutX="252.0" layoutY="54.0" mnemonicParsing="false" onAction="#onBartenderTypeCheckBox" stylesheets="@../css/style.css" text="Šanker">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </CheckBox>
+      <CheckBox fx:id="managerTypeCheckBox" layoutX="355.0" layoutY="54.0" mnemonicParsing="false" onAction="#onManagerTypeCheckBox" stylesheets="@../css/style.css" text="Menadžer">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </CheckBox>
+      <CheckBox fx:id="waiterTypeCheckBox" layoutX="482.0" layoutY="54.0" mnemonicParsing="false" onAction="#onWaiterTypeCheckBox" stylesheets="@../css/style.css" text="Konobar">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </CheckBox>
+      <Label layoutX="54.0" layoutY="103.0" text="JMB:">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Label>
+      <Label layoutX="56.0" layoutY="141.0" text="Ime:">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Label>
+      <Label layoutX="56.0" layoutY="182.0" text="Prezime:">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Label>
+      <Label layoutX="55.0" layoutY="223.0" text="Adresa:">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Label>
+      <Label layoutX="54.0" layoutY="265.0" text="Plata:">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Label>
+      <Label layoutX="332.0" layoutY="158.0" text="Brojevi telefona:">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Label>
+      <Label layoutX="332.0" layoutY="104.0" text="Strani jezici:">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Label>
+      <Label layoutX="54.0" layoutY="357.0" text="Specijalizacija jela:">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Label>
+      <Label layoutX="332.0" layoutY="223.0" prefHeight="16.0" prefWidth="140.0" text="Iskustvo sa koktelima:">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Label>
+      <CheckBox fx:id="yesCheckBox" layoutX="482.0" layoutY="222.0" mnemonicParsing="false" onAction="#onYesCheckBox" stylesheets="@../css/style.css" text="Da">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </CheckBox>
+      <CheckBox fx:id="noCheckBox" layoutX="537.0" layoutY="222.0" mnemonicParsing="false" onAction="#onNoCheckBox" prefHeight="17.0" prefWidth="45.0" stylesheets="@../css/style.css" text="Ne">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </CheckBox>
+      <TextField fx:id="JMBTextField" layoutX="130.0" layoutY="99.0" prefHeight="25.0" prefWidth="185.0" stylesheets="@../css/style.css">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font></TextField>
+      <TextField fx:id="nameTextField" layoutX="130.0" layoutY="137.0" prefHeight="25.0" prefWidth="185.0" stylesheets="@../css/style.css">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font></TextField>
+      <TextField fx:id="surnameTextField" layoutX="130.0" layoutY="178.0" prefHeight="25.0" prefWidth="185.0" stylesheets="@../css/style.css">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font></TextField>
+      <TextField fx:id="addressTextField" layoutX="130.0" layoutY="218.0" prefHeight="25.0" prefWidth="185.0" stylesheets="@../css/style.css">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font></TextField>
+      <TextField fx:id="paymentTextField" layoutX="130.0" layoutY="260.0" prefHeight="25.0" prefWidth="185.0" stylesheets="@../css/style.css">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font></TextField>
+      <Button fx:id="saveButton" layoutX="258.0" layoutY="417.0" mnemonicParsing="false" onAction="#onSaveButton" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: linear-gradient(to bottom , #C7F464 , #4D7358);" stylesheets="@../css/style.css" text="Sačuvaj">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Button>
+      <TextField fx:id="languagesTextField" layoutX="440.0" layoutY="100.0" prefHeight="25.0" prefWidth="119.0" stylesheets="@../css/style.css">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font></TextField>
+      <Label layoutX="54.0" layoutY="314.0" text="Radne obaveze:">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Label>
+      <TextField fx:id="obligationTextField" layoutX="179.0" layoutY="310.0" prefHeight="25.0" prefWidth="226.0" stylesheets="@../css/style.css">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font></TextField>
+      <Button fx:id="addLanguageButton" layoutX="572.0" layoutY="97.0" mnemonicParsing="false" onAction="#onAddLanguageButton" prefHeight="28.0" prefWidth="32.0" style="-fx-background-color: linear-gradient(to bottom , #C7F464 , #4D7358);" stylesheets="@../css/style.css">
+         <effect>
+            <Reflection />
+         </effect>
+         <graphic>
+            <ImageView fitHeight="20" fitWidth="20" pickOnBounds="true" preserveRatio="true">
+               <Image url="@../img/add.png" />
+            </ImageView>
+         </graphic>
+      </Button>
+      <TextField fx:id="specializationTextField" layoutX="179.0" layoutY="353.0" prefHeight="25.0" prefWidth="226.0" stylesheets="@../css/style.css">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font></TextField>
+      <TextField fx:id="phoneNumTextField" layoutX="440.0" layoutY="154.0" prefHeight="25.0" prefWidth="119.0" stylesheets="@../css/style.css">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font></TextField>
+      <Button fx:id="addPhoneNumButton" layoutX="572.0" layoutY="152.0" mnemonicParsing="false" onAction="#onAddNumberButton" prefHeight="28.0" prefWidth="36.0" style="-fx-background-color: linear-gradient(to bottom , #C7F464 , #4D7358);" stylesheets="@../css/style.css">
+         <effect>
+            <Reflection />
+         </effect>
+         <graphic>
+            <ImageView fitHeight="20" fitWidth="20" pickOnBounds="true" preserveRatio="true">
+               <Image url="@../img/add.png" />
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="addObligationButton" layoutX="417.0" layoutY="307.0" mnemonicParsing="false" onAction="#onAddObligationButton" prefHeight="28.0" prefWidth="32.0" style="-fx-background-color: linear-gradient(to bottom , #C7F464 , #4D7358);" stylesheets="@../css/style.css">
+         <effect>
+            <Reflection />
+         </effect>
+         <graphic>
+            <ImageView fitHeight="20" fitWidth="20" pickOnBounds="true" preserveRatio="true">
+               <Image url="@../img/add.png" />
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="addSpecializationButton" layoutX="417.0" layoutY="351.0" mnemonicParsing="false" onAction="#onAddSpecializationButton" prefHeight="28.0" prefWidth="32.0" style="-fx-background-color: linear-gradient(to bottom , #C7F464 , #4D7358);" stylesheets="@../css/style.css">
+         <effect>
+            <Reflection />
+         </effect>
+         <graphic>
+            <ImageView fitHeight="20" fitWidth="20" pickOnBounds="true" preserveRatio="true">
+               <Image url="@../img/add.png" />
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

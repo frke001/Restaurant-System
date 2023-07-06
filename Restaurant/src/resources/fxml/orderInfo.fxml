@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="469.0" prefWidth="638.0" style="-fx-background-color: linear-gradient(to bottom, #556270, #4ECDC4);" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.unibl.etf.restaurant.controllers.OrderInfoController">
+   <children>
+      <Label layoutX="258.0" layoutY="51.0" text="Informacije o narudžbi:">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect></Label>
+      <Label layoutX="61.0" layoutY="163.0" text="Konobar:">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect></Label>
+      <Label layoutX="64.0" layoutY="209.0" text="Sto:">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect></Label>
+      <TextField fx:id="waiterTextField" editable="false" layoutX="130.0" layoutY="159.0" prefHeight="25.0" prefWidth="167.0" stylesheets="@../css/style.css" />
+      <TextField fx:id="tableTextField" editable="false" layoutX="130.0" layoutY="205.0" prefHeight="25.0" prefWidth="167.0" stylesheets="@../css/style.css" />
+      <TableView fx:id="orderItemsTable" layoutX="321.0" layoutY="92.0" prefHeight="359.0" prefWidth="276.0" stylesheets="@../css/style.css" tableMenuButtonVisible="true">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="55.0" style="-fx-alignment: center" text="ID" />
+          <TableColumn fx:id="foodDrinkColumn" prefWidth="120.0" style="-fx-alignment: center" text="Hrana/Piće" />
+            <TableColumn fx:id="quantityColumn" prefWidth="81.0" style="-fx-alignment: center" text="Količina" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

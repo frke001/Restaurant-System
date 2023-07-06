@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="469.0" prefWidth="638.0" style="-fx-background-color: linear-gradient(to bottom, #556270, #4ECDC4);" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="233.0" layoutY="45.0" text="Unesite podatke za modifikaciju:">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect></Label>
+      <Button fx:id="saveButton" layoutX="284.0" layoutY="407.0" mnemonicParsing="false" onAction="#onSaveButton" style="-fx-background-color: linear-gradient(to bottom , #C7F464 , #4D7358);" stylesheets="@../css/style.css" text="Sačuvaj">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect></Button>
+      <Label layoutX="70.0" layoutY="198.0" text="Adresa:">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Label>
+      <Label layoutX="70.0" layoutY="128.0" text="Plata:">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Label>
+      <TextField fx:id="paymentTextField" layoutX="133.0" layoutY="123.0" prefHeight="25.0" prefWidth="185.0" stylesheets="@../css/style.css">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font></TextField>
+      <TextField fx:id="addressTextField" layoutX="133.0" layoutY="193.0" prefHeight="25.0" prefWidth="185.0" stylesheets="@../css/style.css">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font></TextField>
+      <Label layoutX="69.0" layoutY="275.0" text="Brojevi telefona:">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Label>
+      <ListView fx:id="obligationListView" layoutX="463.0" layoutY="86.0" prefHeight="65.0" prefWidth="145.0" stylesheets="@../css/style.css" />
+      <Button fx:id="addPhoneNumButton" layoutX="70.0" layoutY="308.0" mnemonicParsing="false" onAction="#onAddPhoneNumButton" prefHeight="28.0" prefWidth="32.0" style="-fx-background-color: linear-gradient(to bottom , #C7F464 , #4D7358);" stylesheets="@../css/style.css">
+         <effect>
+            <Reflection />
+         </effect>
+         <graphic>
+            <ImageView fitHeight="20" fitWidth="20" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/add.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="removePhoneNumButton" layoutX="115.0" layoutY="308.0" mnemonicParsing="false" onAction="#onRemovePhoneNumButton" prefHeight="28.0" prefWidth="32.0" style="-fx-background-color: linear-gradient(to bottom , #C7F464 , #4D7358);" stylesheets="@../css/style.css">
+         <effect>
+            <Reflection />
+         </effect>
+         <graphic>
+            <ImageView fitHeight="20" fitWidth="20" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/delete.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="340.0" layoutY="91.0" text="Radne obaveze:">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Label>
+      <Button fx:id="addObligationButton" layoutX="340.0" layoutY="122.0" mnemonicParsing="false" onAction="#onAddObligationButton" prefHeight="28.0" prefWidth="32.0" style="-fx-background-color: linear-gradient(to bottom , #C7F464 , #4D7358);" stylesheets="@../css/style.css">
+         <effect>
+            <Reflection />
+         </effect>
+         <graphic>
+            <ImageView fitHeight="20" fitWidth="20" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/add.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="removeObligationButton" layoutX="387.0" layoutY="122.0" mnemonicParsing="false" onAction="#onRemoveObligationButton" prefHeight="28.0" prefWidth="32.0" style="-fx-background-color: linear-gradient(to bottom , #C7F464 , #4D7358);" stylesheets="@../css/style.css">
+         <effect>
+            <Reflection />
+         </effect>
+         <graphic>
+            <ImageView fitHeight="20" fitWidth="20" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/delete.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ListView fx:id="phoneNumberListView" layoutX="173.0" layoutY="267.0" prefHeight="65.0" prefWidth="145.0" stylesheets="@../css/style.css" />
+      <Label layoutX="340.0" layoutY="190.0" text="Specijalizacija jela:">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Label>
+      <ListView fx:id="specializationListView" layoutX="463.0" layoutY="186.0" prefHeight="65.0" prefWidth="145.0" stylesheets="@../css/style.css" />
+      <Button fx:id="addSpecializationButton" layoutX="340.0" layoutY="221.0" mnemonicParsing="false" onAction="#onAddSpecializationButton" prefHeight="28.0" prefWidth="32.0" style="-fx-background-color: linear-gradient(to bottom , #C7F464 , #4D7358);" stylesheets="@../css/style.css">
+         <effect>
+            <Reflection />
+         </effect>
+         <graphic>
+            <ImageView fitHeight="20" fitWidth="20" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/add.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="removeSpecializationButton" layoutX="387.0" layoutY="221.0" mnemonicParsing="false" onAction="#onRemoveSpecializationButton" prefHeight="28.0" prefWidth="32.0" style="-fx-background-color: linear-gradient(to bottom , #C7F464 , #4D7358);" stylesheets="@../css/style.css">
+         <effect>
+            <Reflection />
+         </effect>
+         <graphic>
+            <ImageView fitHeight="20" fitWidth="20" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/delete.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="339.0" layoutY="291.0" text="Strani jezici:">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Label>
+      <ListView fx:id="languagesListView" layoutX="463.0" layoutY="289.0" prefHeight="65.0" prefWidth="145.0" stylesheets="@../css/style.css" />
+      <Button fx:id="addLanguageButton" layoutX="340.0" layoutY="326.0" mnemonicParsing="false" onAction="#onAddLanguageButton" prefHeight="28.0" prefWidth="32.0" style="-fx-background-color: linear-gradient(to bottom , #C7F464 , #4D7358);" stylesheets="@../css/style.css">
+         <effect>
+            <Reflection />
+         </effect>
+         <graphic>
+            <ImageView fitHeight="20" fitWidth="20" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/add.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="removeLanguageButton" layoutX="387.0" layoutY="326.0" mnemonicParsing="false" onAction="#onRemoveLanguageButton" prefHeight="28.0" prefWidth="32.0" style="-fx-background-color: linear-gradient(to bottom , #C7F464 , #4D7358);" stylesheets="@../css/style.css">
+         <effect>
+            <Reflection />
+         </effect>
+         <graphic>
+            <ImageView fitHeight="20" fitWidth="20" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/delete.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

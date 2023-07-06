@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="591.0" prefWidth="912.0" style="-fx-background-color: linear-gradient(to bottom, #556270, #4ECDC4);" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.unibl.etf.restaurant.controllers.WorkersController">
+   <children>
+      <TableView fx:id="workersTable" layoutX="153.0" layoutY="80.0" prefHeight="486.0" prefWidth="749.0" stylesheets="@/css/style.css" tableMenuButtonVisible="true">
+         <columns>
+            <TableColumn fx:id="JMBColumn" maxWidth="1000.0" prefWidth="135.0" resizable="false" style="-fx-alignment: center" text="JMB" />
+            <TableColumn fx:id="nameColumn" maxWidth="1000.0" prefWidth="116.0" resizable="false" style="-fx-alignment: center" text="Ime" />
+            <TableColumn fx:id="surnameColumn" maxWidth="1000.0" prefWidth="129.0" resizable="false" style="-fx-alignment: center" text="Prezime" />
+            <TableColumn fx:id="addressColumn" maxWidth="1500.0" prefWidth="178.0" resizable="false" style="-fx-alignment: center" text="Adresa" />
+            <TableColumn fx:id="paymentColumn" maxWidth="1000.0" prefWidth="91.0" resizable="false" style="-fx-alignment: center" text="Plata" />
+            <TableColumn fx:id="typeColumn" maxWidth="1000.0" prefWidth="86.0" resizable="false" style="-fx-alignment: center" text="Tip" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <HBox alignment="CENTER" layoutX="325.0" layoutY="17.0" prefHeight="28.0" prefWidth="366.0">
+         <children>
+            <Button fx:id="addButton" mnemonicParsing="false" onAction="#onAddButtonClick" style="-fx-background-color: linear-gradient(to bottom , #C7F464 , #4D7358);" stylesheets="@../css/style.css">
+               <graphic>
+                  <ImageView fitHeight="20" fitWidth="20" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/add.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <Reflection />
+               </effect>
+            </Button>
+            <Button fx:id="modifyButton" mnemonicParsing="false" onAction="#onModifyButtonClick" style="-fx-background-color: linear-gradient(to bottom , #C7F464 , #4D7358);" stylesheets="@../css/style.css">
+               <graphic>
+                  <ImageView fitHeight="20" fitWidth="20" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/modify.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <Reflection />
+               </effect>
+            </Button>
+            <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#onDeleteButtonClick" style="-fx-background-color: linear-gradient(to bottom , #C7F464 , #4D7358);" stylesheets="@../css/style.css">
+               <graphic>
+                  <ImageView fitHeight="20" fitWidth="20" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/delete.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <Reflection />
+               </effect>
+            </Button>
+         </children>
+      </HBox>
+      <Pane prefHeight="591.0" prefWidth="141.0" style="-fx-background-color: linear-gradient(to bottom, #4ECDC4 , #556270);">
+         <children>
+            <Button fx:id="menuButton" layoutX="47.0" layoutY="163.0" mnemonicParsing="false" onAction="#onMenuButtonClick" style="-fx-background-color: linear-gradient(to bottom right, #C7F464 , #4D7358);" stylesheets="@../css/style.css">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.9473684430122375" green="0.017543859779834747" blue="0.017543859779834747" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <effect>
+                  <Reflection />
+               </effect>
+               <graphic>
+                  <ImageView fitHeight="30" fitWidth="30" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/food.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="homeButton" layoutX="47.0" layoutY="50.0" mnemonicParsing="false" onAction="#onHomeButtonClick" style="-fx-background-color: linear-gradient(to bottom right, #C7F464 , #4D7358);" stylesheets="@../css/style.css">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="30" fitWidth="30" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/home.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.9473684430122375" green="0.017543859779834747" blue="0.017543859779834747" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <effect>
+                  <Reflection />
+               </effect>
+            </Button>
+             <Button fx:id="workersButton" layoutX="47.0" layoutY="287.0" mnemonicParsing="false" onAction="#onWorkersButtonClick" style="-fx-background-color: linear-gradient(to bottom right, #C7F464 , #4D7358);" stylesheets="@../css/style.css">
+                 <font>
+                     <Font name="Times New Roman" size="14.0" />
+                 </font>
+                 <graphic>
+                     <ImageView fitHeight="30" fitWidth="30" pickOnBounds="true" preserveRatio="true">
+                         <image>
+                             <Image url="@../img/workers.png" />
+                         </image>
+                     </ImageView>
+                 </graphic>
+                 <textFill>
+                     <LinearGradient endX="1.0" endY="1.0">
+                         <stops>
+                             <Stop>
+                                 <color>
+                                     <Color red="0.9473684430122375" green="0.017543859779834747" blue="0.017543859779834747" />
+                                 </color>
+                             </Stop>
+                             <Stop offset="1.0">
+                                 <color>
+                                     <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                             </Stop>
+                         </stops>
+                     </LinearGradient>
+                 </textFill>
+                 <effect>
+                     <Reflection />
+                 </effect>
+             </Button>
+            <Button fx:id="orderButton" layoutX="47.0" layoutY="417.0" mnemonicParsing="false" onAction="#onOrderButtonClick" style="-fx-background-color: linear-gradient(to bottom right, #C7F464 , #4D7358);" stylesheets="@../css/style.css">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="30" fitWidth="30" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/receipt.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.9473684430122375" green="0.017543859779834747" blue="0.017543859779834747" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <effect>
+                  <Reflection />
+               </effect>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

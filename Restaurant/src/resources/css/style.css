@@ -1,0 +1,97 @@
+.table-view {
+    -fx-border-style: none;
+    -fx-border-color: #C7F464;
+    -fx-font-family: 'Century Gothic';
+    -fx-font-size: 11pt;
+    -fx-border-width: 0px;
+}
+
+
+.table-view .column-header-background .filler {
+    -fx-background-color: transparent;
+}
+
+.table-view .corner {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #C7F464;
+}
+
+.table-view .column-header {
+    -fx-background-color: linear-gradient(to bottom, #575965, #939498 ); /*#1cbdbd,  #4b9797*/
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-background-radius: 25 25 25 25;
+    -fx-font-family: 'Century Gothic';
+    -fx-font-size: 12pt;
+}
+
+.table-view .table-cell {
+    -fx-border-color: transparent;
+    -fx-text-background-color: #bfea5a;
+}
+.table-row-cell:hover {
+    -fx-opacity: 0.7;
+    -fx-text-background-color: #C7F464;
+    -fx-cursor: hand;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #9f9fa2;
+
+}
+.table-row-cell:even {
+    -fx-background-color: #77787a;
+
+}
+.list-view{
+    -fx-font-family: 'Century Gothic';
+    -fx-font-size: 13;
+    -fx-alignment: center;
+    -fx-text-background-color: #C7F464;
+    -fx-background-color:  #939498;
+}
+.list-cell{
+    -fx-background-color:  #939498;
+}
+.button:hover{
+    -fx-opacity: 0.8;
+    -fx-cursor: hand;
+}
+.button:pressed {
+    -fx-opacity: 0.7;
+}
+.my-dialog{
+    -fx-background-color: linear-gradient(to bottom, #c46406, #e1a548, #f6d682);
+}
+.my-dialog .button{
+    -fx-background-color: linear-gradient(to bottom , #c46406, #e1a548, #f6d682 );
+}
+.my-dialog .dialog-pane{
+    -fx-background-color: linear-gradient(to bottom, #c46406, #e1a548, #f6d682);
+}
+.combo-box{
+    -fx-font-family: "Century Gothic";
+    -fx-font-size: 13;
+    -fx-alignment: center;
+    -fx-text-background-color: #C7F464;
+}
+.text-field{
+    -fx-font-family: "Century Gothic";
+    -fx-font-size: 13;
+    -fx-background-color: #939498;
+    -fx-text-fill: #C7F464;
+}
+.text-area{
+    -fx-font-family: "Century Gothic";
+    -fx-font-size: 13;
+    -fx-text-fill: #C7F464;
+}
+.text-area .content{
+    -fx-background-color: #939498;
+}
+.check-box:selected .box{
+    -fx-background-color: #939498;
+}
+
